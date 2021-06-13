@@ -61,11 +61,14 @@ public class app {
     public static String createPassword(ArrayList<String> pass){
         String finalPass="";
         int rand;
-        while(pass.size()>0) {
-            rand = (int) Math.floor(Math.random() * (pass.size() - 0 + 1) + 0);
+        int size=pass.size();
+        while(size>0) {
+            rand = (int) Math.floor(Math.random() * ((size-1) - 0 + 1) + 0);
             finalPass += pass.get(rand);
-            pass.remove(rand);
+            pass.remove(pass.get(rand));
+            size--;
         }
+        System.out.print(finalPass);
         return finalPass;
     }
 }
