@@ -7,7 +7,7 @@ import java.util.HashMap;
  *  Copyright 2021 Gracie Bliss
  */
 
-
+import java.util.HashMap;
 
 public class app {
 
@@ -24,7 +24,6 @@ public class app {
         employees.put(lastNames[4], createEmployee("Sally", "Webber", "Web Developer","2015-12-18" ));
         employees.put(lastNames[5], createEmployee("Tou", "Xiong", "Software Engineer", "2016-10-05"));
 
-        //Output
         System.out.println("Name                 | Position          | Separation Date");
         System.out.println("---------------------|-------------------|----------------");
         System.out.println(employees.get(lastNames[0]).firstName + " " + employees.get(lastNames[0]).lastName + "    | " + employees.get(lastNames[0]).position + "               | " + employees.get(lastNames[0]).separationDate);
